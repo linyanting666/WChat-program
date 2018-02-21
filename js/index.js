@@ -1,0 +1,32 @@
+$(document).ready(function(){
+	$(".d1").click(function(){
+		$(".dd1").children(".p1").addClass("one");
+		$(".dd1").children(".p2").addClass("two");
+	})
+	$(".d2").click(function(){
+		$(".dd2").children(".p1").addClass("one");
+		$(".dd2").children(".p2").addClass("two");
+	})
+	$(".con2-4").mouseenter(function(){
+		$(this).children(".con2-5").fadeIn(600);
+	})
+	$(".con2-4").mouseleave(function(){
+		$(this).children(".con2-5").fadeOut(600);
+	})
+	$(".footer").children("div").mouseenter(function(){
+		$(this).children(".im1").fadeIn(600);
+	})
+	$(".footer").children("div").mouseleave(function(){
+		$(this).children(".im1").fadeOut(600);
+	})
+	$(".a1").click(function(){
+		$(".xl").animate({"height":"255px"},600);
+		$(this).css("display","none");
+		$(".a2").css("display","block");
+	})
+	$(".a2").click(function(){
+		$(".xl").animate({"height":"0"},600);
+		$(this).css("display","none");
+		$(".a1").css("display","block");
+	})
+})
